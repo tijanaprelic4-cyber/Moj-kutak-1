@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f2ff;
+    color: #333;
+    padding-bottom: 80px;
+}
+
+.header {
+    background: linear-gradient(135deg, #b983ff, #ff7eb6);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 0 0 25px 25px;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 15px;
+}
+
+.stranica {
+    display: none;
+}
+
+.stranica.aktivna {
+    display: block;
+}
+
+.kartica,
+section {
+    background: white;
+    border-radius: 18px;
+    padding: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+
+h2 {
+    color: #9c27b0;
+    margin-bottom: 15px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    background: #b983ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #9c27b0;
+}
+
+.meni {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    box-shadow: 0 -3px 10px rgba(0,0,0,.15);
+}
+
+.meni button {
+    width: auto;
+    background: transparent;
+    color: #9c27b0;
+    font-size: 24px;
+    padding: 8px;
+}

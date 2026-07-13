@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moj kutak 🌸</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#b983ff">
+</head>
+
+<body>
+
+<header class="header">
+<h1>🌸 Moj kutak</h1>
+<p id="datum"></p>
+</header>
+
+<main>
+
+<section id="pocetna" class="stranica aktivna">
+
+<h2>Dobro došla 🌸</h2>
+
+<div class="kartica">
+
+<label>Kako se danas osećaš?</label>
+
+<select id="raspolozenje">
+
+<option>😊 Odlično</option>
+<option>🙂 Dobro</option>
+<option>😐 Onako</option>
+<option>😔 Loše</option>
+
+</select>
+
+</div>
+
+</section>
+<section id="dnevnik" class="stranica">
+
+<h2>📖 Dnevnik</h2>
+
+<textarea id="tekstDnevnika" placeholder="Kako je prošao tvoj dan?"></textarea>
+
+<button onclick="sacuvajDnevnik()">💾 Sačuvaj</button>
+
+</section>
+
+<section id="ishrana" class="stranica">
+
+<h2>🍽 Ishrana</h2>
+
+<input type="text" id="dorucak" placeholder="Doručak">
+
+<input type="text" id="rucak" placeholder="Ručak">
+
+<input type="text" id="vecera" placeholder="Večera">
+
+<button onclick="sacuvajIshranu()">💾 Sačuvaj</button>
+
+</section>
+
+<section id="zdravlje" class="stranica">
+
+<h2>💚 Zdravlje</h2>
+
+<input type="number" id="voda" placeholder="Voda (litara)">
+
+<input type="number" id="koraci" placeholder="Koraci">
+
+<button onclick="sacuvajZdravlje()">💾 Sačuvaj</button>
+
+</section>
+
+<section id="profil" class="stranica">
+
+<h2>👤 Profil</h2>
+
+<p>Dobro došla u svoju aplikaciju Moj kutak.</p>
+
+</section>
+</main>
+
+<nav class="meni">
+    <button onclick="prikazi('pocetna')">🏠</button>
+    <button onclick="prikazi('dnevnik')">📖</button>
+    <button onclick="prikazi('ishrana')">🍽</button>
+    <button onclick="prikazi('zdravlje')">💚</button>
+    <button onclick="prikazi('profil')">👤</button>
+</nav>
+
+<script src="script.js"></script>
+
+</body>
+</html>
