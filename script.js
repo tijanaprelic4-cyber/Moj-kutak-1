@@ -58,3 +58,27 @@ if ("serviceWorker" in navigator) {
         navigator.serviceWorker.register("./sw.js");
     });
 }
+
+// ======================
+// PIN ZAŠTITA
+// ======================
+
+const PIN = "1234";
+
+function proveriPIN() {
+
+    const unos = document.getElementById("pin").value;
+
+    if (unos === PIN) {
+
+        document.getElementById("zakljucavanje").style.display = "none";
+        document.getElementById("aplikacija").style.display = "block";
+
+    } else {
+
+        alert("Pogrešan PIN!");
+
+        document.getElementById("pin").value = "";
+
+    }
+}
